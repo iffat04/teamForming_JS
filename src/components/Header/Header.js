@@ -7,7 +7,8 @@ const Header = () => {
         <div className='header'>
               <img className='logo' src={logo} alt=""/>
            <div>
-           <h1>WORK UNIT FORMATION</h1>
+           <h1>Project Team Formation</h1>
+           <p>Select Members To form a Project Team</p>
             <h3>Total Budget : 10000</h3>
            </div>
            

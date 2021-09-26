@@ -1,4 +1,35 @@
+.card-title{
+    color: rgb(70, 170, 140);
+}
+.employee-container{
+    border-radius: 10px;
+}
+.employee-container:hover{
+    box-shadow: 5px 10px 8px 5px #888888;
+}
+.employee-details{
+    display: none;
+}
+.employee-container:hover .employee-details{
+    display: block;
+}
+
 .picture{
     width:200px;
-    border-radius: 50px;
+    border-radius: 50%;
+}
+
+#name{
+    color:rgb(163, 39, 76)
+}
+
+
+#addBtn{
+    padding: 10px 15px;
+    background-color: rgb(140, 187, 161);
+    border-radius: 5px;
+    border:none;
+}
+#addBtn:hover{
+    transform: scale(1.2);
 }

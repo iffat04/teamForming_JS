@@ -1,0 +1,24 @@
+.team{
+    
+    /* border: 1px solid green; */
+    padding: 10px;
+    box-shadow: 10px 10px 20px gray;
+    border-radius: 5px;
+    margin-right: 30px;
+    position: fixed;
+    overflow-y: scroll;
+    width: 200px;
+    height:300px;
+}
+.member-name{
+    color:white;
+    border: 1px solid rgb(173, 94, 138);
+    margin:1px 0px;
+    padding: 2px;
+    font-weight: 900px;
+    background-color:rgb(46, 4, 28);
+}
+
+#totalCost{
+    color:crimson;
+}

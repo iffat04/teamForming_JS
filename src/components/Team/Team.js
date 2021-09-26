@@ -1,23 +1,28 @@
 import './Team.css'
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 const Team = (props) => {
     const{teamMembers} = props;
     console.log(teamMembers)
+    //calculate total
     const reducer =(prev,current)=>prev+current.balance;
     const totalPayment = teamMembers.reduce(reducer,0)
     console.log(totalPayment)
 
+    //adding icon
+    const memberIcon = <FontAwesomeIcon icon={faUser} size="lg" />
+
     return (
-        <div className="card bg-info">
-            <h1>i am a cart</h1>
-            <h2>Team Members:{teamMembers.length}</h2>
+        <div className="card team">
+            <h5>{memberIcon} : {teamMembers.length}</h5>
             <ul>
             {
-                teamMembers.map(member=><li>{member.name}</li>)
+                teamMembers.map(member=><li className="member-name" key={member.name}>{member.name}</li>)
             }
             </ul>
-            <h3>Total Cost For the Team :{(totalPayment).toFixed(2)}</h3>
+            <p>Total Cost: <span id= "totalCost">{(totalPayment).toFixed(2)} </span> </p>
             
         </div>
     );
